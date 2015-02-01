@@ -8,5 +8,5 @@ ADD smallCloud.image /cogspurlinuxht/
 ADD smallCloud.changes /cogspurlinuxht/ 
 ADD squeak.conf /etc/security/limits.d/
 EXPOSE 80
-CMD ["/cogspurlinux/squeak", "-vm-sound-null -vm-display-null", "smallCloud.image"] 
+CMD ["/cogspurlinuxht/squeak", "-vm-sound-null -vm-display-null", "smallCloud.image"] 
 
