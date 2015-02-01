@@ -3,7 +3,7 @@ FROM pshouse/squeak-base
 RUN wget http://www.mirandabanda.org/files/Cog/VM/VM.r3236/cogspurlinuxht-15.04.3236.tgz 
 
 RUN tar xfvz cog*
-WORKINGDIR /cogspurlinuxht
+WORKDIR /cogspurlinuxht
 ADD smallCloud.image .
 ADD smallCloud.changes .
 
