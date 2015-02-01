@@ -4,9 +4,9 @@ RUN curl -o cogspurlinuxht.tgz http://www.mirandabanda.org/files/Cog/VM/VM.r3236
 
 RUN tar xfvz cog*
 WORKDIR /cogspurlinuxht
-ADD smallCloud.image /cogspurlinuxht 
-ADD smallCloud.changes /cogspurlinuxht 
-ADD squeak.conf /etc/security/limits.d
+ADD smallCloud.image /cogspurlinuxht/ 
+ADD smallCloud.changes /cogspurlinuxht/ 
+ADD squeak.conf /etc/security/limits.d/
 PORT 80
 CMD ["squeak", "-vm-sound-null -vm-display-null", "smallCloud.image"] 
 
