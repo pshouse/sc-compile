@@ -1,7 +1,7 @@
 FROM pshouse/squeak-base
 
-ENV RELEASE 3266
-RUN curl -o cogspurlinuxht.tgz http://www.mirandabanda.org/files/Cog/VM/VM.r$RELEASE/cogspurlinuxht-15.09.$RELEASE.tgz
+ENV RELEASE 3268
+RUN curl -s -o cogspurlinuxht.tgz http://www.mirandabanda.org/files/Cog/VM/VM.r$RELEASE/cogspurlinuxht-15.10.$RELEASE.tgz
 
 RUN tar xfvz cog*
 WORKDIR /cogspurlinuxht
